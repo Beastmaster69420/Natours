@@ -145,5 +145,17 @@
     "name": "Annapurna Base Camp",
     "duration": 7,
     "difficulty": "moderate"
+  },
+  {
+    "id": 11,
+    "name": "Annapurna Base Camp",
+    "duration": 7,
+    "difficulty": "moderate"
+  },
+  {
+    "id": 12,
+    "name": "Annapurna Base Camp",
+    "duration": 7,
+    "difficulty": "moderate"
   }
 ]
