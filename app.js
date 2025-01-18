@@ -1,10 +1,15 @@
 const express = require('express');
+console.log(process.env.NODE_ENV)
 const morgan = require('morgan');
 const app = express();
+if(process.env.NODE_ENV === 'development') {
+  app.use(morgan('dev'));
+}
 const tourRouter=require('./routers/tourRouter')
 const userRouter=require('./routers/userRouter')
 app.use(express.json());
-app.use(morgan('dev'));
+
+app.use(express.static(`${__dirname}/public`))
 app.use((req, res, next) => {
   console.log('Middleware executed');
   next();
